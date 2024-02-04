@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>India</title>
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">INDIA भारत</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#indian-diversity" onclick="togglemenu()">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact" onclick="togglemenu()">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login </button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
+                </div>
+            </div>
+
+
+            <!--login Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="loginModalLabel">Login to RG Blog</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword3">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-sm-10 offset-sm-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                            <label class="form-check-label" for="gridCheck1">
+                                                Accept terms and conditions
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--signup Modal -->
+            <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="signupModalLabel">Sign up to get unnecessary gmail</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail3">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword3">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="inputPassword3">
+                                    </div>
+                                </div>
+                                <fieldset class="row mb-3">
+                                    <legend class="col-form-label col-sm-2 pt-0">Profession</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                                Professior
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios"
+                                                id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                                Student
+                                            </label>
+                                        </div>
+                                    </div>
+                        </div>
+                        </fieldset>
+
+
+                        <div class="row mb-3">
+                            <div class="col-sm-10 offset-sm-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Accept terms and conditions
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </section>
+    <section id="slide">
+        <div id="carouselExampleDark" class="carousel carousel-light slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://source.unsplash.com/1400x500/?india" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>India</h2>
+                        <p>Proud thing of india</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://source.unsplash.com/1400x500/?TATA,Mahiendra,maruti,herobike"
+                        class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://source.unsplash.com/1400x500/?mahiendra thar" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="thubnail">
+        <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+
+                            <h3 class="mb-0">Festivals</h3>
+                            <div class="mb-1 text-muted">Land of Festivals</div>
+                            <p class="card-text mb-auto">
+                                India is often called as the land of festivals and fairs where each day is some kind of
+                                celebration and there are more festivals celebrated in India than anywhere else in the
+                                world.
+                            </p>
+                            <a href="https://fairgaze.com/generalnews/india-land-of-festivals.html"
+                                class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="200" height="250"
+                                src="https://source.unsplash.com/200x250/?diwali" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">Sweets</h3>
+                            <div class="mb-1 text-muted">Mithai</div>
+                            <p class="mb-auto">Indians are known for their unique taste and experimental behavior when
+                                it comes to food
+                            </p>
+                            <a href="https://en.wikipedia.org/wiki/List_of_Indian_sweets_and_desserts"
+                                class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="200" height="250"
+                                src="https://source.unsplash.com/200x250/?indian,sweets" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="indian-diversity">
+        <div class="container my-4">
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Sports in INDIA <span class="text-muted">India has a history of
+                            sports</span></h2>
+                    <p class="lead"> Cricket is the most popular spectator sport; it generates the highest television
+                        viewership, with the Indian Premier League (IPL)</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://source.unsplash.com/500x500/?cricket"
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
+                </div>
+            </div>
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">ISRO <span class="text-muted">Indian Space Research
+                            Organisation</span></h2>
+                    <p class="lead">ISRO has the world's largest constellation of remote-sensing satellites and operates
+                        the GAGAN and IRNSS satellite navigation systems. It has sent three missions to the Moon and one
+                        to Mars.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="https://source.unsplash.com/500x500/?ISRO"
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
+
+                </div>
+            </div>
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">UNITY<span class="text-muted"> Unity in Diversity</span></h2>
+                    <p class="lead">India has 28 states and 8 union territories with different cultures and is the most
+                        populated country in the world But thenalso india is fully united</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://source.unsplash.com/500x500/?indian-diversity"
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
+
+                </div>
+            </div>
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">INDIA ARMY<span class="text-muted"> Pride of india</span></h2>
+                    <p class="lead">The Indian Army, the world's second-largest standing army, marks Indian Army Day
+                        2024 theme as the Year of Technology Absorption, signifying a focused commitment to
+                        incorporating and harnessing technological advancements.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/426/714/desktop-wallpaper-60-para-sf-para-sf-commando-thumbnail.jpg"
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        width="500px" height="500px" alt="">
+
+                </div>
+            </div>
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">BOLLYWOOD<span class="text-muted"> Hindi Cinema</span></h2>
+                    <p class="lead">In 2021, India and its famous Bollywood - top the list with over 1,800 films, or
+                        around 24% of the total unscaled value, gaining an extra 2% of the global share making it the
+                        uncontested global champion in terms of number of films produced.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://source.unsplash.com/500x500/?theater"
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="container my-10">
+            <h2>Contact us</h2>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Professior
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Student
+                </label>
+            </div>
+            <label for="exampleFormControlTextarea1" class="form-label ">Select your quarry</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+
+                <option selected>Select your quarry</option>
+                <option value="1">SPORTS</option>
+                <option value="2">ISRO</option>
+                <option value="3">UNITY</option>
+                <option value="3">INDIAN ARMY</option>
+                <option value="3">BOLLYWOOD</option>
+                <option value="3">OTHERS</option>
+            </select>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label ">Elobrate your concern</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="button btn btn-primary">submit</div>
+        </div>
+    </section>
+    <section>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+                function togglemenu() {
+                    const menu = document.querySelector(".menu-links");
+                    const icon = document.querySelector(".hamberger-icon");
+                    menu.classList.toggle("open");
+                    icon.classList.toggle("open");
+                }</script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    </section>
+    <footer>
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="#nav-bar"
+                            onclick="togglemenu()">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="#indian-diversity"
+                            onclick="togglemenu()">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="#nav-bar"
+                            onclick="togglemenu()">Login</a></li>
+
+                </ul>
+                <p class="text-center text-body-secondary">© 2024 Pankaj rhodiya, Inc all right resorved to RHODIYA
+                    GROUP</p>
+            </footer>
+        </div>
+    </footer>
+</body>
+
+</html>
